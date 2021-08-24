@@ -104,4 +104,18 @@ SSH into the control node and follow the steps below:
 Once the groups have been set, create a playbook. The playbook is named "Install-ELK.yml". This file should be located within the '/etc/ansible' directory.
 Run the playbook, and navigate to the URL http://http://157.55.164.222:5601/app/kibana to verify that the installation worked.
 
+![Kibana](https://github.com/cy6ercode/GW_PROJECT-1/blob/176aa21eb447dd3f422b0b9015bebb8cd1cd396b/IMAGES/Kibana%20Snapshot.png)
+
+### Using the Filebeat
+● In your '/etc/ansible' directory, locate the configuration file for filebeat (filebeat.config).
+
+● Nano into the filebeat.config file located in the '/etc/ansible/' directory to make the necessary changes to your configuration.
+
+● Scroll to line #1106 and replace the IP address with the internal IP address of the ELK server. Next, scroll to line #1806 and replace the IP address with the internal IP address of the ELK server.
+
+● Run the playbook, using the command 'ansible-playbook filebeat-playbook.yml'. This playbook will run the tasks you have specified in the playbook by downloading the filebeat software from a web repository to each webserver. It will copy the filebeat-config.yml from the JumpBox to every webserver designated in the hosts file. Lastly, it will build and start the filebeat container on each webserver.
+
+● Once completed, you can verify the installation and confirm that the playbooks worked by verifying that the ELK stack is receiving logs. You can of course view this through Kibana and are able to analyze and search through the log data for all your security issues.
+
+
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
