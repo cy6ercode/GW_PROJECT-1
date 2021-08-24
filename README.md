@@ -117,5 +117,6 @@ Run the playbook, and navigate to the URL http://http://157.55.164.222:5601/app/
 
 ● Once completed, you can verify the installation and confirm that the playbooks worked by verifying that the ELK stack is receiving logs. You can of course view this through Kibana and are able to analyze and search through the log data for all your security issues.
 
+![](https://github.com/cy6ercode/GW_PROJECT-1/blob/f8b2ee8eff1d45416243a5c10540c768a46a3473/IMAGES/Filebeat%20Module%20Status.png)
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+
