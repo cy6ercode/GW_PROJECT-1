@@ -3,7 +3,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![Diagram](GW_PROJECT-1/IMAGES/08.10.2021_My Azure Cloud II Network Diagram.png)
+![Diagram](IMAGES/08.10.2021_My Azure Cloud II Network Diagram.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
