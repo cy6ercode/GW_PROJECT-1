@@ -99,6 +99,8 @@ SSH into the control node and follow the steps below:
 - Update the configuration file to include...the 'remote_user_name' of your choice.
 - Update the hosts file to include the 'webservers' groups with Web-1, Web-2, and Web-3 private IP addresses and also the 'elk' group making sure to include the Elk Server's private IP address to Ansible's inventory. Be sure to include te python3 interpreter next to each IP address.
 
+![](https://github.com/cy6ercode/GW_PROJECT-1/blob/0097eade57e5896a0dcd19e3699027564dc194c2/IMAGES/ELK%20Webserver%20Hostgroups.png)
+
 Once the groups have been set, create a playbook. The playbook is named "Install-ELK.yml". This file should be located within the '/etc/ansible' directory.
 Run the playbook, and navigate to the URL http://http://157.55.164.222:5601/app/kibana to verify that the installation worked.
 
